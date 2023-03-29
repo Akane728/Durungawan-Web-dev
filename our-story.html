@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durungawan</title>
+  <link href="style_durungawan.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<style>
+    header{
+        background: #000000;
+		height: 80px;
+    }
+</style>
+
+<body>
+    <header>
+      <div class="bx bx-menu" id="menu-icon">
+        </div>
+      <a href="#home" class="logo"><i class='bx bxs-bowl-hot'></i><span> Durungawan</span></a>
+      <ul class="navbar">
+        <li>
+          <a class="active" href="index_durungawan.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="#our-story">Our Story</a>
+        </li>
+        <li>
+          <a class="active" href="featured.html">Featured</a>
+        </li>
+        <li>
+          <a class="active" href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a class="active" href="team.html">Team</a>
+        </li>
+      </ul>
+      <div class="main">
+        <a href="book-now.html"><i class="ri-bookmark-fill"></i> Book Now</a>
+          
+      </div>
+    </header>
+
+    <!-- header with the quote -->
+    <br><br><br><br>
+    <section class="ourstorypage">
+      <div class="storybehind">
+        <br><br><br><br><p>Experience the Philippines in every bite with the taste of our innovative dishes.</p>
+      </div>
+    </section>
+        
+    <!-- Start of the Our Story Page -->
+    <section class="our-story-text2">
+         
+      <!-- Origin -->
+      <div>
+        <h1> Where the Idea Starts</h1><br>
+        <p>
+          Durungawan, a restaurant like no other. Our story began with a simple idea during a lunch with our team: to revolutionize the way we serve food in the Philippines. We wanted to showcase the incredible talent of our chefs and introduce a more profound degustation of Lechon, a traditional Filipino dish. And thus, the concept of molecular gastronomy was born. This sets us apart from other restaurants in the area. We are dedicated to exploring the beauty and richness of regional cuisines. We have gone on countless expeditions around the country, immersing ourselves in the culture and flavors of different regions. Our menu boasts the ingenuity, creativity, and wittiness of our local cuisine. We want our guests to experience a taste of the Philippines like never before.
+        </p><br>
+      </div>
+
+      <!-- image can't upload on VS code po, so I used a link muna, nagkakaroon ng error sa side ko ih-->
+      <div class="our-img">
+        <img src="https://4.bp.blogspot.com/-oU_ziQmlc-U/XBJzq1QIPlI/AAAAAAABFNg/PK21k9lf97o2qnxERXRFQghHq2AM8hzYACLcBGAs/s1600/SAM_6552-1.jpg">
+      </div>
+    </section>  
+
+   <!-- Mission, vission and values  -->
+    <section class="our-story3">
+      <div class="our-story-text3">
+        <h1> Our Mission, Vision and Values</h1>
+      </div>
+    
+      <!-- temporary image and can't upload pa rin sa VS code -->
+      <div class="slideshow-container">
+        <!-- First Slider (Mission) -->
+        <div class="ourstoryslides fade">
+          <div class="numbertext">1 / 3</div>
+          <div class="text">Mission</div>
+          <img src="https://i.pinimg.com/originals/8e/ea/46/8eea4621a56088e49847c1f03c2aa337.jpg" style="width:100%">
+        </div>
+        <!-- Second Slider (Vision) -->
+        <div class="ourstoryslides fade">
+          <div class="numbertext">2 / 3</div>
+          <div class="text">Vision</div>
+          <img src="https://i.pinimg.com/originals/8e/ea/46/8eea4621a56088e49847c1f03c2aa337.jpg" style="width:100%">
+        </div>
+
+        <!-- Third Slider (Values) -->
+        <div class="ourstoryslides fade">
+          <div class="numbertext">3 / 3</div>
+          <div class="text">Values</div>
+          <img src="https://i.pinimg.com/originals/8e/ea/46/8eea4621a56088e49847c1f03c2aa337.jpg" style="width:100%">
+        </div>
+  
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+  
+      </div><br>
+  
+      <div style="text-align:center">
+        <span class="ourdot" onclick="currentSlide(1)"></span> 
+        <span class="ourdot" onclick="currentSlide(2)"></span> 
+        <span class="ourdot" onclick="currentSlide(3)"></span> 
+      </div>
+
+  
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("ourstoryslides");
+    let dots = document.getElementsByClassName("ourdot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active1", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active1";
+  }
+  </script>
+      
+    </section>
+    
+      <!-- Unique menu  -->
+      <!-- can't upload the image sa VScode-->
+    <section class="our-story-text2">
+        <div class="our-img">
+          <img src="https://www.sogoodmagazine.com/wp-content/uploads/2020/10/rosemary-alexei-cov.jpg">
+        </div>
+        <div>
+        <h1> Unique Feature</h1><br>
+        <p>
+          Our most popular and unique menu item is our Adobo as a plated dessert. It's a playful spin on a traditional dish that has become a favorite among our guests. We also offer a variety of dishes that showcase the beauty and richness of regional cuisines.
+        </p><br>
+      </div>
+    </section>
+      <!-- Impact -->
+    
+      <section class="our-story-text2">
+        <div>
+        <p>
+          We are committed to having a positive impact on our local community and environment. We source our ingredients locally and reduce our environmental impact as much as possible. We want to promote our unique and interesting spin on Filipino dishes, locally and globally, to attract new customers and aid the progress of Durungawan. <br>
+
+          Thank you for taking the time to learn about our story. We look forward to serving you and sharing our love for Filipino cuisine with you at Durungawan.      
+        </p>
+        </div>
+
+        <div class="our-img">
+          <img src="">
+        </div>
+    </section>
+
+
+<br>
+  <section class="footer" id="footer">
+    <a href="index_durungawan.html" class="logo"><i class='bx bxs-bowl-hot logo'></i><span >Durungawan</span></a>
+    <div class="footer-container">
+      <div>
+        <h3> BASTA TITLE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+      </div>
+      <div>
+        <h3>Get the latest news and offers from us</h3>
+        <input type="email" placeholder="Enter your email">
+        <ul>
+          <li><a href="" class="bx bxl-twitter"></a></li>
+          <li><a href="" class="bx bxl-instagram"></a></li>
+          <li><a href="" class="bx bxl-facebook-circle"></a></li>
+          <li><a href="" class="bx bxl-linkedin-square"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <span>+63 995 9616683</span>
+        <span>durungawan@gmail.com</span>
+        <span>durungawan-restaurants.com.ph</span>
+      </div>
+    </div>
+    <p>&copy;2023 Reserved by Syntax Explorer</p>
+  </section>
+
+
+<script type="text/javascript" src="script_durungawan.js"></script>
+</body>
+
+
+</html>
